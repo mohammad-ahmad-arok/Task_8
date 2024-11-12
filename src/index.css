@@ -1,0 +1,52 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family:"Montserrat", sans-serif;
+    transition: all 0.3 ease-in-out;
+    -webkit-transition: all 0.3 ease-in-out;
+    -moz-transition: all 0.3 ease-in-out;
+    -ms-transition: all 0.3 ease-in-out;
+    -o-transition: all 0.3 ease-in-out;
+}
+
+:root {
+    --primary-color: #FEAF00;
+    --secondary-color: #F8D442;
+    --danger-color: #FE0000;
+    --dimSecondary-color: #F2EAE1;
+    --dimGray-color: #C4C4C4;
+    --dimWhite-color: #FDFDFD;
+    --dimBlack-color: #6C6C6C;
+}
+
+/* ===scrollbar=== */
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #001e2138;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+/* === custom select text === */
+::-moz-selection {
+    color: var(--dimSecondary-color);
+    background: var(--primary-color);
+
+}
+
+::selection {
+    color: var(--dimSecondary-color);
+    background: var(--primary-color);
+}
